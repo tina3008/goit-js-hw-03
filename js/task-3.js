@@ -2,10 +2,19 @@
 function filterArray(numbers, value) {
    
     const array = [];
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] > value) {
-            array.push(numbers[i])
-        } 
+    // 1 wave
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] > value) {
+    //         array.push(numbers[i])
+    //     } 
+    // }
+    // return array
+
+// 2 wave
+    for (const i of numbers) {
+        if (i > value) {
+                    array.push(i)
+                }
     }
     return array
  }
